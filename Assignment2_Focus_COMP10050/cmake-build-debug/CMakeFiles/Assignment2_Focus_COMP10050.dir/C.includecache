@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Assignment2_Focus_COMP10050/Definations.c
+Definations.h
+C:/Assignment2_Focus_COMP10050/Definations.h
+
+C:/Assignment2_Focus_COMP10050/Definations.h
+
