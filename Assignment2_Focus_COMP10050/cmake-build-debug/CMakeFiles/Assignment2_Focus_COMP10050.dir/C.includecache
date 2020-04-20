@@ -6,9 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Assignment2_Focus_COMP10050/Definations.c
+C:/Assignment2_Focus_COMP10050/Definations.h
+
+C:/Assignment2_Focus_COMP10050/game_init.h
 Definations.h
 C:/Assignment2_Focus_COMP10050/Definations.h
 
+C:/Assignment2_Focus_COMP10050/input_output.c
+stdio.h
+-
+input_output.h
+C:/Assignment2_Focus_COMP10050/input_output.h
+Definations.h
+C:/Assignment2_Focus_COMP10050/Definations.h
+
+C:/Assignment2_Focus_COMP10050/input_output.h
+game_init.h
+C:/Assignment2_Focus_COMP10050/game_init.h
+Definations.h
 C:/Assignment2_Focus_COMP10050/Definations.h
 

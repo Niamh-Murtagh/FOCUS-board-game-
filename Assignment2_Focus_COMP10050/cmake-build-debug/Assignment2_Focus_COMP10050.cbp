@@ -24,6 +24,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Assignment2_Focus_COMP10050/.."/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
@@ -42,6 +43,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Assignment2_Focus_COMP10050/.."/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
@@ -74,10 +76,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Assignment2_Focus_COMP10050/CheckWin.c">
+			<Option target="Assignment2_Focus_COMP10050"/>
+		</Unit>
+		<Unit filename="C:/Assignment2_Focus_COMP10050/CheckWin.h">
+			<Option target="Assignment2_Focus_COMP10050"/>
+		</Unit>
 		<Unit filename="C:/Assignment2_Focus_COMP10050/Definations.c">
 			<Option target="Assignment2_Focus_COMP10050"/>
 		</Unit>
 		<Unit filename="C:/Assignment2_Focus_COMP10050/Definations.h">
+			<Option target="Assignment2_Focus_COMP10050"/>
+		</Unit>
+		<Unit filename="C:/Assignment2_Focus_COMP10050/Turns.c">
+			<Option target="Assignment2_Focus_COMP10050"/>
+		</Unit>
+		<Unit filename="C:/Assignment2_Focus_COMP10050/Turns.h">
 			<Option target="Assignment2_Focus_COMP10050"/>
 		</Unit>
 		<Unit filename="C:/Assignment2_Focus_COMP10050/game_init.c">

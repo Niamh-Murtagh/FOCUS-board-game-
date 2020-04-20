@@ -9,26 +9,58 @@
 
 void initialize_players(player players[PLAYERS_NUM]){
 
-    // implement here the functionality to initialize the players
+    //int clr;
+    printf("Enter the name for player 1 :");
+    //should scan the users string into the struct player as thr players name
+    scanf("%s", &players[0].player_name[0]);
 
-}
+    //choosing colour
+    unsigned int c;
+    printf("\nChoose your colour - 0 for red 1 for green :");
+    scanf("%u", &c);
+    players[0].player_color = c;
+
+     //Player 2
+    printf("\nEnter the name for player 2 :");
+    scanf("%s", &players[1].player_name[0]);
+
+    printf("\n%s has chosen : " , &players[0].player_name[0]);
+    if (c == 0) {
+        printf("Red\n");
+        printf("%s must use  : ", &players[1].player_name[0] );
+        printf("Green\n\n");
+        players[1].player_color = GREEN;
+        }
+    else {
+        printf("Green\n");
+        printf("%s must use  : " ,&players[1].player_name[1] );
+        printf("Red\n\n");
+        players[1].player_color = RED;
+    }
+    //Initalising the numbers to zero
+    players[0].player_piece_captured =0;
+    players[1].player_piece_captured =0;
+    players[0].player_piece_kept =0;
+    players[1].player_piece_kept=0;
+
+}//end initalised
 
 //Set Invalid Squares (where it is not possible to place stacks)
-set_invalid(square * s){
-s->type = INVALID;
+void set_invalid(square * s){
+s->type = (square_type *) INVALID;
 s->stack = NULL;
 s->num_pieces = 0;
 }
 
 //Set Empty Squares (with no pieces/stacks)
-set_empty(square * s){
+void set_empty(square * s){
 s->type = VALID;
 s->stack = NULL;
 s->num_pieces = 0;
 }
 
 //Set squares  with a GREEN piece
-set_green(square * s){
+void set_green(square * s){
 s->type = VALID;
 s->stack = (piece *) malloc (sizeof(piece));
 s->stack->p_color = GREEN;
@@ -37,7 +69,7 @@ s->num_pieces = 1;
 }
 
 //Set squares with a RED piece
-set_red(square * s){
+void set_red(square * s){
 s->type = VALID;
 s->stack = (piece *) malloc (sizeof(piece));
 s->stack->p_color = RED;

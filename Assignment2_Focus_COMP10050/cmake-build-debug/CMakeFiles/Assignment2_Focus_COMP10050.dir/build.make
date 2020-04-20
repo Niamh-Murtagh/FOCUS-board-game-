@@ -57,6 +57,7 @@ include CMakeFiles/Assignment2_Focus_COMP10050.dir/progress.make
 include CMakeFiles/Assignment2_Focus_COMP10050.dir/flags.make
 
 CMakeFiles/Assignment2_Focus_COMP10050.dir/main.c.obj: CMakeFiles/Assignment2_Focus_COMP10050.dir/flags.make
+CMakeFiles/Assignment2_Focus_COMP10050.dir/main.c.obj: CMakeFiles/Assignment2_Focus_COMP10050.dir/includes_C.rsp
 CMakeFiles/Assignment2_Focus_COMP10050.dir/main.c.obj: ../main.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Assignment2_Focus_COMP10050\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Assignment2_Focus_COMP10050.dir/main.c.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Assignment2_Focus_COMP10050.dir\main.c.obj   -c C:\Assignment2_Focus_COMP10050\main.c
@@ -70,6 +71,7 @@ CMakeFiles/Assignment2_Focus_COMP10050.dir/main.c.s: cmake_force
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Assignment2_Focus_COMP10050\main.c -o CMakeFiles\Assignment2_Focus_COMP10050.dir\main.c.s
 
 CMakeFiles/Assignment2_Focus_COMP10050.dir/game_init.c.obj: CMakeFiles/Assignment2_Focus_COMP10050.dir/flags.make
+CMakeFiles/Assignment2_Focus_COMP10050.dir/game_init.c.obj: CMakeFiles/Assignment2_Focus_COMP10050.dir/includes_C.rsp
 CMakeFiles/Assignment2_Focus_COMP10050.dir/game_init.c.obj: ../game_init.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Assignment2_Focus_COMP10050\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Assignment2_Focus_COMP10050.dir/game_init.c.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Assignment2_Focus_COMP10050.dir\game_init.c.obj   -c C:\Assignment2_Focus_COMP10050\game_init.c
@@ -83,6 +85,7 @@ CMakeFiles/Assignment2_Focus_COMP10050.dir/game_init.c.s: cmake_force
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Assignment2_Focus_COMP10050\game_init.c -o CMakeFiles\Assignment2_Focus_COMP10050.dir\game_init.c.s
 
 CMakeFiles/Assignment2_Focus_COMP10050.dir/input_output.c.obj: CMakeFiles/Assignment2_Focus_COMP10050.dir/flags.make
+CMakeFiles/Assignment2_Focus_COMP10050.dir/input_output.c.obj: CMakeFiles/Assignment2_Focus_COMP10050.dir/includes_C.rsp
 CMakeFiles/Assignment2_Focus_COMP10050.dir/input_output.c.obj: ../input_output.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Assignment2_Focus_COMP10050\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Assignment2_Focus_COMP10050.dir/input_output.c.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Assignment2_Focus_COMP10050.dir\input_output.c.obj   -c C:\Assignment2_Focus_COMP10050\input_output.c
@@ -96,6 +99,7 @@ CMakeFiles/Assignment2_Focus_COMP10050.dir/input_output.c.s: cmake_force
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Assignment2_Focus_COMP10050\input_output.c -o CMakeFiles\Assignment2_Focus_COMP10050.dir\input_output.c.s
 
 CMakeFiles/Assignment2_Focus_COMP10050.dir/Definations.c.obj: CMakeFiles/Assignment2_Focus_COMP10050.dir/flags.make
+CMakeFiles/Assignment2_Focus_COMP10050.dir/Definations.c.obj: CMakeFiles/Assignment2_Focus_COMP10050.dir/includes_C.rsp
 CMakeFiles/Assignment2_Focus_COMP10050.dir/Definations.c.obj: ../Definations.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Assignment2_Focus_COMP10050\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Assignment2_Focus_COMP10050.dir/Definations.c.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Assignment2_Focus_COMP10050.dir\Definations.c.obj   -c C:\Assignment2_Focus_COMP10050\Definations.c
@@ -108,12 +112,42 @@ CMakeFiles/Assignment2_Focus_COMP10050.dir/Definations.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment2_Focus_COMP10050.dir/Definations.c.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Assignment2_Focus_COMP10050\Definations.c -o CMakeFiles\Assignment2_Focus_COMP10050.dir\Definations.c.s
 
+CMakeFiles/Assignment2_Focus_COMP10050.dir/Turns.c.obj: CMakeFiles/Assignment2_Focus_COMP10050.dir/flags.make
+CMakeFiles/Assignment2_Focus_COMP10050.dir/Turns.c.obj: CMakeFiles/Assignment2_Focus_COMP10050.dir/includes_C.rsp
+CMakeFiles/Assignment2_Focus_COMP10050.dir/Turns.c.obj: ../Turns.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Assignment2_Focus_COMP10050\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Assignment2_Focus_COMP10050.dir/Turns.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Assignment2_Focus_COMP10050.dir\Turns.c.obj   -c C:\Assignment2_Focus_COMP10050\Turns.c
+
+CMakeFiles/Assignment2_Focus_COMP10050.dir/Turns.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment2_Focus_COMP10050.dir/Turns.c.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Assignment2_Focus_COMP10050\Turns.c > CMakeFiles\Assignment2_Focus_COMP10050.dir\Turns.c.i
+
+CMakeFiles/Assignment2_Focus_COMP10050.dir/Turns.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment2_Focus_COMP10050.dir/Turns.c.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Assignment2_Focus_COMP10050\Turns.c -o CMakeFiles\Assignment2_Focus_COMP10050.dir\Turns.c.s
+
+CMakeFiles/Assignment2_Focus_COMP10050.dir/CheckWin.c.obj: CMakeFiles/Assignment2_Focus_COMP10050.dir/flags.make
+CMakeFiles/Assignment2_Focus_COMP10050.dir/CheckWin.c.obj: CMakeFiles/Assignment2_Focus_COMP10050.dir/includes_C.rsp
+CMakeFiles/Assignment2_Focus_COMP10050.dir/CheckWin.c.obj: ../CheckWin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Assignment2_Focus_COMP10050\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Assignment2_Focus_COMP10050.dir/CheckWin.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Assignment2_Focus_COMP10050.dir\CheckWin.c.obj   -c C:\Assignment2_Focus_COMP10050\CheckWin.c
+
+CMakeFiles/Assignment2_Focus_COMP10050.dir/CheckWin.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment2_Focus_COMP10050.dir/CheckWin.c.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Assignment2_Focus_COMP10050\CheckWin.c > CMakeFiles\Assignment2_Focus_COMP10050.dir\CheckWin.c.i
+
+CMakeFiles/Assignment2_Focus_COMP10050.dir/CheckWin.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment2_Focus_COMP10050.dir/CheckWin.c.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Assignment2_Focus_COMP10050\CheckWin.c -o CMakeFiles\Assignment2_Focus_COMP10050.dir\CheckWin.c.s
+
 # Object files for target Assignment2_Focus_COMP10050
 Assignment2_Focus_COMP10050_OBJECTS = \
 "CMakeFiles/Assignment2_Focus_COMP10050.dir/main.c.obj" \
 "CMakeFiles/Assignment2_Focus_COMP10050.dir/game_init.c.obj" \
 "CMakeFiles/Assignment2_Focus_COMP10050.dir/input_output.c.obj" \
-"CMakeFiles/Assignment2_Focus_COMP10050.dir/Definations.c.obj"
+"CMakeFiles/Assignment2_Focus_COMP10050.dir/Definations.c.obj" \
+"CMakeFiles/Assignment2_Focus_COMP10050.dir/Turns.c.obj" \
+"CMakeFiles/Assignment2_Focus_COMP10050.dir/CheckWin.c.obj"
 
 # External object files for target Assignment2_Focus_COMP10050
 Assignment2_Focus_COMP10050_EXTERNAL_OBJECTS =
@@ -122,11 +156,13 @@ Assignment2_Focus_COMP10050.exe: CMakeFiles/Assignment2_Focus_COMP10050.dir/main
 Assignment2_Focus_COMP10050.exe: CMakeFiles/Assignment2_Focus_COMP10050.dir/game_init.c.obj
 Assignment2_Focus_COMP10050.exe: CMakeFiles/Assignment2_Focus_COMP10050.dir/input_output.c.obj
 Assignment2_Focus_COMP10050.exe: CMakeFiles/Assignment2_Focus_COMP10050.dir/Definations.c.obj
+Assignment2_Focus_COMP10050.exe: CMakeFiles/Assignment2_Focus_COMP10050.dir/Turns.c.obj
+Assignment2_Focus_COMP10050.exe: CMakeFiles/Assignment2_Focus_COMP10050.dir/CheckWin.c.obj
 Assignment2_Focus_COMP10050.exe: CMakeFiles/Assignment2_Focus_COMP10050.dir/build.make
 Assignment2_Focus_COMP10050.exe: CMakeFiles/Assignment2_Focus_COMP10050.dir/linklibs.rsp
 Assignment2_Focus_COMP10050.exe: CMakeFiles/Assignment2_Focus_COMP10050.dir/objects1.rsp
 Assignment2_Focus_COMP10050.exe: CMakeFiles/Assignment2_Focus_COMP10050.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Assignment2_Focus_COMP10050\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Assignment2_Focus_COMP10050.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Assignment2_Focus_COMP10050\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Assignment2_Focus_COMP10050.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Assignment2_Focus_COMP10050.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
