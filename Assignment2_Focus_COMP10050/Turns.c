@@ -107,6 +107,24 @@ void move_piece(square * s, player *curr_player, square *dest)
     }
 
 }//end move piece
+void adding_piece(square *s, player *curr_player){
+    //creating a new piece with the players colour
+    piece *New_piece = (piece *) malloc (sizeof(piece));
+    New_piece->p_color = curr_player->player_color;
+    piece *curr_piece = NULL;
+    if(s->stack != NULL){
+        //piece on square that has a stack
+        curr_piece = s->stack;
+    }
+    //top
+    New_piece->next = curr_piece;
+    s->stack =New_piece;
+    //changing the numbers
+    s->num_pieces++;
+    curr_player->player_piece_kept--;
+
+}//end adding piece
+
 
 int player_move(player *curr_player, square board[BOARD_SIZE][BOARD_SIZE]){
     int row=0,col=0; //piece to be moved
@@ -116,19 +134,31 @@ int player_move(player *curr_player, square board[BOARD_SIZE][BOARD_SIZE]){
     //check valid square
     int ret_square = 1;
      int ret_colour = 1;
+    int check=0;
 
-    //error colours or square dont match
-   while((ret_colour != 0 ) || ( ret_square != 0)) {
-       //checking
-       printf("\n%s please pick a %s square:", &curr_player->player_name[0], enum_desc(1,curr_player->player_color));
-       scanf("%d%d", &row, &col);
+    //error colours or square dont match or add new piece
 
-       ret_square = valid_square(board, row, col);
-       if(ret_square == 0) {
-           ret_colour = valid_colour(&board[row][col], curr_player->player_color);
-       }
+    if(curr_player->player_piece_kept > 0) {
+        printf("Do you want to move a piece or  use a reserve piece?\n"
+               "Please pick 0 for move or 1 to use a reserve piece:");
+        scanf("%d", &check);
 
-   }//end while
+    }
+
+    if(check == 0){
+    while((ret_colour != 0 ) || ( ret_square != 0)) {
+       //checking reserve pieces
+
+               printf("\n%s please pick a %s square:", &curr_player->player_name[0], enum_desc(1,curr_player->player_color));
+               scanf("%d%d", &row, &col);
+
+               ret_square = valid_square(board, row, col);
+               if(ret_square == 0) {
+                   ret_colour = valid_colour(&board[row][col], curr_player->player_color);
+               }
+
+    }//end while
+    }//end check if
 
     int ret2 = 1;
 
@@ -137,23 +167,38 @@ int player_move(player *curr_player, square board[BOARD_SIZE][BOARD_SIZE]){
             printf("\n %s please enter your destination square: ",&curr_player->player_name[0]);
             scanf("%d%d", &newrow, &newcol);
             ret2 = valid_square(board, newrow, newcol);
+
             //check again
             if(ret2 == 0) {
-                //check rows UP DOWN LEFT RIGHT
-                if (newrow > (row + board[row][col].num_pieces) || newrow < (row - board[row][col].num_pieces)) {
-                    printf("!! you can only move the number of rows in stack!!\n");
-                    ret2 = 1;
-                }
-                //check cols
-                if (newcol > (col + board[row][col].num_pieces) || newcol < (col - board[row][col].num_pieces)) {
-                    printf("!! you can only move amount of columns in stack!!\n");
-                    ret2 = 1;
-                }
-            }
+                //This is creating the new piece
+                if(check ==0){
+
+                    //check rows UP DOWN LEFT RIGHT
+                    if (newrow > (row + board[row][col].num_pieces) || newrow < (row - board[row][col].num_pieces)) {
+                        printf("!! you can only move the number of rows in stack!!\n");
+                        ret2 = 1;
+                    }
+                    //check cols
+                    if (newcol > (col + board[row][col].num_pieces) || newcol < (col - board[row][col].num_pieces)) {
+                        printf("!! you can only move amount of columns in stack!!\n");
+                        ret2 = 1;
+                    }
+
+                }//end if check
+            }//end ret2 check
         }//end while
 
+    if(check ==1){
+
+        adding_piece(&board[newrow][newcol], curr_player);
+    }//ends check if
+    else {
         //actually MOVING
         move_piece(&board[row][col], curr_player, &board[newrow][newcol]);
-
+    }
     return 0;
 }//end player move
+
+
+
+
