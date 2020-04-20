@@ -122,6 +122,33 @@ Assignment2_Focus_COMP10050/fast:
 	$(MAKE) -f CMakeFiles\Assignment2_Focus_COMP10050.dir\build.make CMakeFiles/Assignment2_Focus_COMP10050.dir/build
 .PHONY : Assignment2_Focus_COMP10050/fast
 
+CheckWin.obj: CheckWin.c.obj
+
+.PHONY : CheckWin.obj
+
+# target to build an object file
+CheckWin.c.obj:
+	$(MAKE) -f CMakeFiles\Assignment2_Focus_COMP10050.dir\build.make CMakeFiles/Assignment2_Focus_COMP10050.dir/CheckWin.c.obj
+.PHONY : CheckWin.c.obj
+
+CheckWin.i: CheckWin.c.i
+
+.PHONY : CheckWin.i
+
+# target to preprocess a source file
+CheckWin.c.i:
+	$(MAKE) -f CMakeFiles\Assignment2_Focus_COMP10050.dir\build.make CMakeFiles/Assignment2_Focus_COMP10050.dir/CheckWin.c.i
+.PHONY : CheckWin.c.i
+
+CheckWin.s: CheckWin.c.s
+
+.PHONY : CheckWin.s
+
+# target to generate assembly for a file
+CheckWin.c.s:
+	$(MAKE) -f CMakeFiles\Assignment2_Focus_COMP10050.dir\build.make CMakeFiles/Assignment2_Focus_COMP10050.dir/CheckWin.c.s
+.PHONY : CheckWin.c.s
+
 Definations.obj: Definations.c.obj
 
 .PHONY : Definations.obj
@@ -148,6 +175,33 @@ Definations.s: Definations.c.s
 Definations.c.s:
 	$(MAKE) -f CMakeFiles\Assignment2_Focus_COMP10050.dir\build.make CMakeFiles/Assignment2_Focus_COMP10050.dir/Definations.c.s
 .PHONY : Definations.c.s
+
+Turns.obj: Turns.c.obj
+
+.PHONY : Turns.obj
+
+# target to build an object file
+Turns.c.obj:
+	$(MAKE) -f CMakeFiles\Assignment2_Focus_COMP10050.dir\build.make CMakeFiles/Assignment2_Focus_COMP10050.dir/Turns.c.obj
+.PHONY : Turns.c.obj
+
+Turns.i: Turns.c.i
+
+.PHONY : Turns.i
+
+# target to preprocess a source file
+Turns.c.i:
+	$(MAKE) -f CMakeFiles\Assignment2_Focus_COMP10050.dir\build.make CMakeFiles/Assignment2_Focus_COMP10050.dir/Turns.c.i
+.PHONY : Turns.c.i
+
+Turns.s: Turns.c.s
+
+.PHONY : Turns.s
+
+# target to generate assembly for a file
+Turns.c.s:
+	$(MAKE) -f CMakeFiles\Assignment2_Focus_COMP10050.dir\build.make CMakeFiles/Assignment2_Focus_COMP10050.dir/Turns.c.s
+.PHONY : Turns.c.s
 
 game_init.obj: game_init.c.obj
 
@@ -239,9 +293,15 @@ help:
 	@echo ... Assignment2_Focus_COMP10050
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... CheckWin.obj
+	@echo ... CheckWin.i
+	@echo ... CheckWin.s
 	@echo ... Definations.obj
 	@echo ... Definations.i
 	@echo ... Definations.s
+	@echo ... Turns.obj
+	@echo ... Turns.i
+	@echo ... Turns.s
 	@echo ... game_init.obj
 	@echo ... game_init.i
 	@echo ... game_init.s

@@ -7,15 +7,15 @@
 
 #include "Definations.h"
 
-//colors that a piece can have
+//colors that a piece can have RED 0 GREEN 1
 typedef enum color {
     RED,
     GREEN
 }color;
 
 // Square types
-//INVALID: squares that are on the sides and where no piece can be placed
-//VALID: squares where it is possible to place a piece or a stack
+//INVALID: squares that are on the sides and where no piece can be placed 1
+//VALID: squares where it is possible to place a piece or a stack 1
 typedef enum square_type {
     VALID,
     INVALID
@@ -23,9 +23,8 @@ typedef enum square_type {
 
 //Player
 typedef struct player{
-    //the color associated with the player
-    color player_color;
-    char player_name[20];
+    color player_color;  //the enum color
+    char player_name[PLAYERS_NAME];
     int player_piece_captured;
     int player_piece_kept;
 
@@ -36,19 +35,17 @@ typedef struct piece {
     //the color associated with a piece
     color p_color;
     // This is a pointer to the next pieces
-    // to create a stack. For this lab you do not have to think too much about it.
-    struct piece * next;
+    // to create a stack. For this lab you do not have to think too much about it.Week 10 lecture
+    struct piece *next;
 
 }piece;
 
 // A Square of the board
 typedef struct square {
     // type of the square (VALID/INVALID)
-    square_type type;
-
+    square_type *type;
     //the piece or the top piece on the stack
-    piece * stack;
-
+    piece *stack;
     //number of pieces on the square
     int num_pieces;
 

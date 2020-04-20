@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = @CMakeFiles/Assignment2_Focus_COMP10050.dir/includes_C.rsp
 
