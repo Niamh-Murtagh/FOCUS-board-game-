@@ -12,31 +12,33 @@
 
 bool win_condition(player curr_player, square board[BOARD_SIZE][BOARD_SIZE]){
     bool win = false;
-    printf("In win condition\n");
-    if(curr_player.player_piece_captured == 18) {
+
+    if(curr_player.player_piece_captured == 18) { //all players pieces are captured ie cant move
         win = true;
         return(win);
     }
 
-  // printf(" empty %d",board[0][2].stack->p_color);
-    //return(win);
 
     for(int i=0; i< BOARD_SIZE; i++) {
-        for (int j = 0; j < BOARD_SIZE; j++) {
+        for (int j=0; j < BOARD_SIZE; j++){
+
             if(board[i][j].stack != NULL) {
-                if (board[i][j].type != VALID || board[i][j].stack->p_color != curr_player.player_color) {
-                    break;
+                //the board still contains both colours red and green or the square is invalid you keep playing
+                if ((board[i][j].type != VALID) || ( board[i][j].stack->p_color != curr_player.player_color)) {
+
+                    win = false;
+                    return(win);
                 }
-                printf("%s WINNER ", curr_player.player_name);
-                win = true;
-                return (win);
             }//end stack if
-            else{
-                win = false;
-                return(win);
-            }
+
         }//end j loop
+        //return(win);
     }//end i loop
+
+    //the board is just your colour
+    win = true;
+
+    printf("\n\n *****%s IS A WINNER*****\n *****CONGRATZ*****\n ", curr_player.player_name);
 
     return(win);
 }//end win condition
