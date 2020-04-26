@@ -11,7 +11,7 @@
 #include "Definations.h"
 #include "game_init.h"
 
-bool win_condition(player curr_player, square board[BOARD_SIZE][BOARD_SIZE]);
+bool win_condition(player curr_player, square board[BOARD_SIZE][BOARD_SIZE], int other_players_pieces);
 
 
 #endif //ASSIGNMENT2_FOCUS_COMP10050_CHECKWIN_H

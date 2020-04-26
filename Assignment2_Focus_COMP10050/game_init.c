@@ -10,18 +10,18 @@
 void initialize_players(player players[PLAYERS_NUM]){
 
     //int clr;
-    printf("Enter the name for player 1 :");
+    printf("Enter the name for player 1:\t");
     //should scan the users string into the struct player as thr players name
     scanf("%s", &players[0].player_name[0]);
 
     //choosing colour
     unsigned int c;
-    printf("\nChoose your colour - 0 for red 1 for green :");
+    printf("\nChoose your colour - 0 for RED 1 for GREEN:\t");
     scanf("%u", &c);
     players[0].player_color = c;
 
      //Player 2
-    printf("\nEnter the name for player 2 :");
+    printf("\nEnter the name for player 2:\t");
     scanf("%s", &players[1].player_name[0]);
 
     printf("\n%s has chosen : " , &players[0].player_name[0]);
@@ -37,7 +37,8 @@ void initialize_players(player players[PLAYERS_NUM]){
         printf("Red\n\n");
         players[1].player_color = RED;
     }
-    //Initalising the numbers to zero
+    //Initalising the numbers to zero for print players
+
     players[0].player_piece_captured =0;
     players[1].player_piece_captured =0;
     players[0].player_piece_kept =0;

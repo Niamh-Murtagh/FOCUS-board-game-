@@ -26,7 +26,7 @@ int main() {
            print_board(board);
            print_player_info(players);
             //check if they have won
-            win = win_condition(players[0], board);
+            win = win_condition(players[0], board, players[1].player_piece_kept);
 
             //if haven't won move to player 2
             if(win == false){
@@ -34,9 +34,10 @@ int main() {
                 print_board(board);
                 print_player_info(players);
                 //check again
-                win = win_condition(players[1], board);
+                win = win_condition(players[1], board, players[0].player_piece_kept);
             }
         }//end while
+        printf("\n!!!GAME IS OVER!!!\nFINAL RESULTS\n\n");
         print_player_info(players);
 
     return 0;

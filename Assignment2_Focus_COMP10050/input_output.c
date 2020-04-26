@@ -6,6 +6,7 @@
 #include "input_output.h"
 #include "Definations.h"
 
+
 /* FUnction to print the board:
  * Invalid Squares are printed as | - |
  * Valid empty squares are printed as |   |
@@ -21,11 +22,12 @@ void print_board(square board[BOARD_SIZE][BOARD_SIZE]){
                     printf("|   ");
                 else{
                     if (board[i][j].stack->p_color == GREEN) //checks the colour of the piece
-                        printf("| G ");
+
+                        printf("| G " );
                     else{
 
                         printf("| R ");
-                        //printf("\033[0m");
+
                     }
                     }
                 }
